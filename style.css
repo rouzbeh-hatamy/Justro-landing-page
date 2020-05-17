@@ -1,0 +1,151 @@
+body {
+    direction: rtl;
+    overflow-x: hidden;
+}
+
+.row {
+    margin: 0% !important;
+}
+
+.row h3 {
+    color: #007f62;
+}
+
+.camel-logo {
+    width: 90px;
+    height: 90px;
+}
+
+.des-text h5 {
+    color: #00a680;
+    border-bottom: #007f62 solid 3px;
+    width: fit-content;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+
+@media only screen and (max-width: 400px) {
+
+    .navbar,
+    .navbar-brand {
+        color: #007f62 !important;
+        background-color: white !important;
+        z-index: 1;
+    }
+
+    .navbar {
+        box-shadow: 0px 3px 5px;
+    }
+
+    .search-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .description {
+        padding: 40px;
+    }
+
+    .carousel-indicators {
+        bottom: -10%;
+        z-index: -1;
+    }
+
+    .carousel-indicators li {
+        background-color: #ff7043;
+    }
+
+    .search {
+        direction: ltr;
+        transition: all .5s;
+        width: 0;
+        margin: 0 8px;
+        padding: 0;
+        border: none;
+        background-color: #cdfff4;
+    }
+
+    .bgimg {
+        position: absolute;
+        right: -30%;
+        z-index: -1;
+    }
+
+    .navbar-brand-pic {
+        display: none;
+    }
+
+    .des-text {
+        margin: 50px 0;
+    }
+
+    .icons-row {
+        height: 100vh;
+    }
+
+    .waves {
+        position: relative;
+        overflow: hidden;
+        padding: 50px 0 0 0;
+        width: 100vw;
+    }
+
+
+    .first-wave {
+        position: absolute;
+        transform: scale(2);
+    }
+
+    .second-wave {
+        position: absolute;
+        left: 35%;
+        transform: scale(2);
+    }
+
+    .icons {
+        display: flex;
+        justify-content: space-between;
+        overflow-x: scroll;
+    }
+
+    .icons div {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+        border: #00a680 1px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 10px;
+    }
+
+    .icons div img {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media only screen and (min-width: 400px) {
+    .search-div {
+        display: none;
+    }
+
+    .navbar-nav {
+        justify-content: space-around;
+        width: 100% !important;
+    }
+
+    .navbar,
+    .navbar-brand {
+        color: #007f62 !important;
+        background-color: unset !important;
+    }
+
+    .bgimg {
+        position: absolute;
+        width: 20%;
+        top: 0;
+    }
+}
