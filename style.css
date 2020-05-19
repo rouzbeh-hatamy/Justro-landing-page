@@ -214,7 +214,40 @@ h5 {
         border-radius: 25px;
     }
 
+
+    .splitter-row img {
+        position: absolute;
+    }
+
+    .splitter-row svg {
+        position: absolute;
+        opacity: 0.5;
+        height: 100vh;
+        transform: scale(2);
+    }
+
+    .splitter-row div .btn {
+        color: white;
+    }
+
+    .splitter-row div {
+        position: absolute;
+        z-index: 5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+
     .splitter-row {
+        height: 50vh;
+        position: relative;
+        background-image: url(./export/023_amadegisafar.jpg);
+        background-size: cover;
+        overflow: hidden;
+    }
+
+    .ideas {
         height: 100vh;
     }
 }
