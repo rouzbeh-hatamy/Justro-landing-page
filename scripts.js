@@ -1,5 +1,7 @@
 /* eslint-disable no-unused-expressions */
 $(document).ready(function() {
+  // search button
+
   let isMenuOpen = false;
   $('#toggleSearch').click(function() {
     if (isMenuOpen) {
@@ -11,14 +13,17 @@ $(document).ready(function() {
     }
     console.log(isMenuOpen);
   });
-
+  // mobile screen configuration
   const width = $(document).width();
   width <= 400
     ? $('.container').css('padding', '0')
     : $('.container').css('padding', ' 0 15px');
+  // scroll left on mobile
   if (width <= 400) {
     $('.browse-gallery').scrollLeft(40);
+    $('.categories').scrollLeft(380);
   }
+  // change background on buttons
   $('.hotel').click(function() {
     $('.didani').removeClass('svg-wrapper');
     $('.resturant').removeClass('svg-wrapper');
