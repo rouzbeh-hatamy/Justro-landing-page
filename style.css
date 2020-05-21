@@ -43,7 +43,7 @@ h5 {
 }
 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 768px) {
 
     .navbar,
     .navbar-brand {
@@ -247,6 +247,10 @@ h5 {
         overflow: hidden;
     }
 
+    .ideas-and-categories {
+        height: 80vh;
+    }
+
     .ideas {
         text-align: center;
     }
@@ -308,12 +312,24 @@ h5 {
         justify-content: space-between;
     }
 
-    .subscribe {
+    .subscribe-and-footer {
         height: 100vh;
+        background-color: #e1fff8;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .subscribe input {
+        border-radius: 25px;
+        box-shadow: 0px 4px 20px 0 rgba(0, 88, 67, 0.17);
+    }
+
+    .subscribe {
+        text-align: center;
     }
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (min-width: 768px) {
     .search-div {
         display: none;
     }

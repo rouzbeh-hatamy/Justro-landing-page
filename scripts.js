@@ -15,11 +15,11 @@ $(document).ready(function() {
   });
   // mobile screen configuration
   const width = $(document).width();
-  width <= 400
+  width <= 768
     ? $('.container').css('padding', '0')
     : $('.container').css('padding', ' 0 15px');
   // scroll left on mobile
-  if (width <= 400) {
+  if (width <= 768) {
     $('.browse-gallery').scrollLeft(40);
     $('.categories').scrollLeft(380);
   }
