@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?e36r67');
+  src:  url('fonts/icomoon.eot?e36r67#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?e36r67') format('truetype'),
+    url('fonts/icomoon.woff?e36r67') format('woff'),
+    url('fonts/icomoon.svg?e36r67#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-logo_Bg:before {
+  content: "\e900";
+  color: #cdfff4;
+}
+.icon-bg_wave:before {
+  content: "\e901";
+}
+.icon-icon_didani:before {
+  content: "\e902";
+}
+.icon-icon_restaurant:before {
+  content: "\e903";
+}
+.icon-icon_hotel:before {
+  content: "\e904";
+}
+.icon-icon_fly:before {
+  content: "\e905";
+}
+.icon-icon_nearme:before {
+  content: "\e906";
+}
+.icon-icon_favorites:before {
+  content: "\e907";
+}
+.icon-dlbox_bg1:before {
+  content: "\e908";
+}
+.icon-dlbox_bg2:before {
+  content: "\e909";
+}
+.icon-bg_amadegisafar:before {
+  content: "\e90a";
+}
+.icon-footer_Bg:before {
+  content: "\e90b";
+}
+.icon-footer_cright_bg:before {
+  content: "\e90c";
+}

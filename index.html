@@ -19,7 +19,8 @@
 
 <body>
     <div class="container ">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <!-- nav bar -->
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-light sticky-top pl-md-5 py-md-0">
             <div><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -30,11 +31,11 @@
                 <a class="navbar-brand" href="#">جاسترو</a></div>
             <div class="search-div"><i id="toggleSearch" class="fas fa-search"></i>
                 <form class="form-inline ">
-                    <input class="form-control mr-sm-2 search" type="search" placeholder="Search" aria-label="Search">
+                    <input class="form-control mr-sm-2 search" type="search" placeholder="  Search" aria-label="Search">
                 </form>
             </div>
             <div class="collapse navbar-collapse " id="navbarNav">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav pl-md-5">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">صفحه اصلی <span class="sr-only">(current)</span></a>
                     </li>
@@ -53,13 +54,17 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#"> تماس با ما</a>
                     </li>
+                    <li class="nav-item d-none d-md-block">
+                        <button class="orange-button btn btn-warning">دانلود</button>
+                    </li>
                 </ul>
             </div>
         </nav>
         <img src="./export/009_logo_Bg.svg" class="bgimg" alt="">
+        <!-- slider -->
         <div class="row slider-row">
-            <div class="d-flex  align-items-center offset-2 mt-5"><img src="./export/camel-logo.png" class="camel-logo"
-                    alt="">
+            <div class="d-flex  align-items-center offset-2 mt-5 d-md-none"><img src="./export/camel-logo.png"
+                    class="camel-logo" alt="">
                 <h3>جاسترو</h3>
             </div>
             <div class="description">
@@ -71,7 +76,7 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <div class="des-text">
+                            <div class="des-text pt-5">
                                 <h5>بهتر بشناسید</h5>
                                 <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
                                     گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
@@ -81,7 +86,7 @@
                             <img class="d-block w-100" src="./export/picSlider-1.png" alt="First slide">
                         </div>
                         <div class="carousel-item">
-                            <div class="des-text">
+                            <div class="des-text pt-5">
                                 <h5>بهتر سفر کنید</h5>
                                 <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
                                     گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
@@ -91,7 +96,7 @@
                             <img class="d-block w-100" src="./export/picSlider-2.png" alt="Second slide">
                         </div>
                         <div class="carousel-item">
-                            <div class="des-text">
+                            <div class="des-text pt-5">
                                 <h5> سریعتر رزرو کنید</h5>
                                 <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
                                     گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و
@@ -105,18 +110,13 @@
                 </div>
             </div>
         </div>
+        <!-- icons -->
         <div class="row icons-row">
-            <div class="waves-div">
-                <div class="waves">
-                    <svg class="first-wave" version="1.1" id="Layer_2" opacity="0.3" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1170 300"
-                        style="enable-background:new 0 0 1170 300;" xml:space="preserve">
-                        <style type="text/css">
-                            .st0 {
-                                clip-path: url(#SVGID_2_);
-                                fill: url(#SVGID_3_);
-                            }
-                        </style>
+            <div class="waves-div w-100 overflow-hidden">
+                <div class="waves position-relative ">
+                    <svg class="first-wave position-absolute" version="1.1" id="Layer_2" opacity="0.3"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 1170 300" style="enable-background:new 0 0 1170 300;" xml:space="preserve">
                         <g>
                             <defs>
                                 <rect id="SVGID_1_" width="1170" height="300" />
@@ -138,15 +138,10 @@
                        C-155.3,219.7-350,71.1-350,71.1" />
                         </g>
                     </svg>
-                    <svg class="second-wave" version="1.1" id="Layer_2" opacity="0.3" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1170 300"
-                        style="enable-background:new 0 0 1170 300;" xml:space="preserve">
-                        <style type="text/css">
-                            .st0 {
-                                clip-path: url(#SVGID_2_);
-                                fill: url(#SVGID_3_);
-                            }
-                        </style>
+                    <svg class="second-wave " version="1.1" id="Layer_2" opacity="0.3"
+                        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                        viewBox="0 0 1170 300" style="enable-background:new 0 0 1170 300;" xml:space="preserve">
+
                         <g>
                             <defs>
                                 <rect id="SVGID_1_" width="1170" height="300" />
@@ -170,11 +165,11 @@
                     </svg>
                 </div>
             </div>
-            <div class="row phone-and-icons">
-                <div class=" phone-row order-2">
-                    <img src="./export/phone-2.png" class="phone-img" alt="">
+            <div class="row phone-and-icons d-md-flex">
+                <div class=" phone-row order-2 order-md-1 col-md-5">
+                    <img src="./export/phone-2.png" class="phone-img offset-md-2" alt="">
                 </div>
-                <div class="browse-gallery order-1">
+                <div class="browse-gallery order-1 order-md-2 ">
                     <div class=" nearMe "><svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
                             xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 51.636 51.636"
                             style="enable-background:new 0 0 51.636 51.636;" xml:space="preserve">
@@ -303,7 +298,8 @@
                     </div>
 
                 </div>
-                <div class="icons-description order-3 col-10 offset-1">
+                <div
+                    class="icons-description order-3 col-10 col-md-4 offset-1 d-flex flex-column justify-content-md-center">
                     <h5 class="mb-5">هتل ها را جستجو و رزرو کنید</h5>
                     <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
                         چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
@@ -312,6 +308,7 @@
                 </div>
             </div>
         </div>
+        <!-- download -->
         <div class="col-10 offset-1 mt-5 download-div">
             <div class="download-icon col-5 offset-3 pt-5">
                 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
@@ -377,6 +374,7 @@
                         class="fas fa-download"></i></button>
             </div>
         </div>
+        <!-- splitter -->
         <div class="splitter-row mt-5 mb-5">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1920 350"
@@ -394,6 +392,7 @@
                     شو</button>
             </div>
         </div>
+        <!-- ideas -->
         <div class="ideas-and-categories">
             <div class="ideas">
                 <h5>ایده های سفر</h5>
@@ -420,11 +419,12 @@
                 </div>
             </div>
         </div>
-        <div class="subscribe-and-footer">
+        <!-- subscribe and footer -->
+        <div class="subscribe-and-footer d-none">
             <div class="subscribe pt-4">
                 <span>ایده های جدید رو هفتگی دریافت کن</span><br>
                 <span>آدرس ایمیل خودتون رو در کادر زیر وارد کنید و گزینه ثبت ایمیل رو بزنید</span>
-                <input type="text" class="form-control mt-4 mb-2 col-10 offset-1" id="phoneNumber"
+                <input type="text" class="form-control mt-4 mb-2 col-10 offset-1" id="email"
                     placeholder="ایمیل خود را وارد کنید ...">
                 <button class="mt-3 orange-button btn btn-warning ">ثبت ایمیل</button>
             </div>

@@ -59,4 +59,25 @@ $(document).ready(function() {
     $('.didani').removeClass('svg-wrapper');
     $('.nearMe').addClass('svg-wrapper');
   });
+
+  // web
+
+  // nav bar
+
+  if (width > 768) {
+    $(window).scroll(function() {
+      const scroll = $(window).scrollTop();
+      if (scroll >= 150) {
+        $('#navbar').css('background-color', 'white');
+        $('#navbar').css('box-shadow', '-2.5px 4.3px 15px 0 #e0e0e0');
+      } else {
+        $('#navbar').css('background-color', 'unset');
+        $('#navbar').css('box-shadow', 'none');
+      }
+    });
+
+    // slider
+
+    $('.carousel-item');
+  }
 });
