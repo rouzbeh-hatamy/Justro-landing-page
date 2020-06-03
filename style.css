@@ -34,6 +34,10 @@ h5 {
     border-color: #ff8a65;
 }
 
+.button-nav {
+    width: 100px !important;
+}
+
 .green-button {
     width: 160px;
     border-radius: 25px;
@@ -59,6 +63,7 @@ h5 {
     white-space: nowrap;
     border: 1px solid #00a680;
     border-radius: 50%;
+    background-color: white;
 }
 
 .svg-wrapper {
@@ -89,6 +94,48 @@ h5 {
     width: 20px;
 
 }
+
+.download-div {
+    border-radius: 30px;
+    box-shadow: 2.5px 4.3px 25px 0 #e5e5e5;
+}
+
+.download-description input {
+    background-color: #fafafa;
+    border-radius: 25px;
+    direction: ltr;
+}
+
+
+
+.splitter-row svg {
+    position: absolute;
+    opacity: 0.5;
+    height: 100vh;
+    transform: scale(2);
+}
+
+.splitter-row div .btn {
+    color: white;
+}
+
+.splitter-row div {
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.splitter-row {
+    height: 50vh;
+    position: relative;
+    background-image: url(./export/023_amadegisafar.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
 
 @media only screen and (max-width: 768px) {
 
@@ -191,10 +238,7 @@ h5 {
 
 
 
-    .download-div {
-        border-radius: 15px;
-        box-shadow: 2.5px 4.3px 25px 0 #e5e5e5;
-    }
+
 
     .download-description {
         display: flex;
@@ -204,43 +248,7 @@ h5 {
         direction: ltr;
     }
 
-    .download-description input {
-        background-color: #fafafa;
-        border-radius: 25px;
-    }
 
-
-    .splitter-row img {
-        position: absolute;
-    }
-
-    .splitter-row svg {
-        position: absolute;
-        opacity: 0.5;
-        height: 100vh;
-        transform: scale(2);
-    }
-
-    .splitter-row div .btn {
-        color: white;
-    }
-
-    .splitter-row div {
-        position: absolute;
-        z-index: 5;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        color: white;
-    }
-
-    .splitter-row {
-        height: 50vh;
-        position: relative;
-        background-image: url(./export/023_amadegisafar.jpg);
-        background-size: cover;
-        overflow: hidden;
-    }
 
     .ideas-and-categories {
         height: 80vh;
@@ -380,15 +388,14 @@ h5 {
     }
 
 
-
     .first-wave {
         animation: waves 3000ms ease-out infinite alternate;
-        width: 150vw;
+        width: 100vw;
     }
 
     .second-wave {
         animation: waves 3000ms ease-out infinite alternate 1s;
-        width: 110vw;
+        width: 130vw;
     }
 
     .carousel-item-next,
@@ -406,6 +413,55 @@ h5 {
 
     }
 
+    .line-div {
+        height: 100% !important;
+        width: 2px !important;
+        min-width: 0 !important;
+        left: 40%;
+        top: -5%;
+        z-index: -1 !important;
+        padding: 0 !important;
+    }
+
+    .download-inputs {
+        position: relative;
+    }
+
+    .download-description input {
+        padding-left: 50px;
+    }
+
+    .download-description button.orange-button {
+        position: absolute;
+        left: 20%;
+        top: 0;
+    }
+
+    .download-btns {
+        position: absolute;
+        bottom: -12%;
+    }
+
+    .download-wave {
+        height: 150%;
+        bottom: -18%;
+        left: -30%;
+    }
+
+    .splitter-row {
+        height: 33vh;
+    }
+
+    .splitter-row svg {
+        background-color: white;
+        transform: scale(1.08);
+        height: unset;
+    }
+
+    .splitter-row div .btn {
+        position: absolute;
+        top: 110%;
+    }
 }
 
 @keyframes waves {

@@ -1,4 +1,4 @@
-/* eslint-disable no-unused-expressions */
+/* eslint-disable */
 $(document).ready(function() {
   // search button
 
@@ -23,42 +23,6 @@ $(document).ready(function() {
     $('.browse-gallery').scrollLeft(40);
     $('.categories').scrollLeft(380);
   }
-  // change background on buttons
-  $('.hotel').click(function() {
-    $('.didani').removeClass('svg-wrapper');
-    $('.resturant').removeClass('svg-wrapper');
-    $('.plane').removeClass('svg-wrapper');
-    $('.nearMe').removeClass('svg-wrapper');
-    $('.hotel').addClass('svg-wrapper');
-  });
-  $('.didani').click(function() {
-    $('.hotel').removeClass('svg-wrapper');
-    $('.resturant').removeClass('svg-wrapper');
-    $('.plane').removeClass('svg-wrapper');
-    $('.nearMe').removeClass('svg-wrapper');
-    $('.didani').addClass('svg-wrapper');
-  });
-  $('.resturant').click(function() {
-    $('.hotel').removeClass('svg-wrapper');
-    $('.didani').removeClass('svg-wrapper');
-    $('.plane').removeClass('svg-wrapper');
-    $('.nearMe').removeClass('svg-wrapper');
-    $('.resturant').addClass('svg-wrapper');
-  });
-  $('.plane').click(function() {
-    $('.hotel').removeClass('svg-wrapper');
-    $('.resturant').removeClass('svg-wrapper');
-    $('.didani').removeClass('svg-wrapper');
-    $('.nearMe').removeClass('svg-wrapper');
-    $('.plane').addClass('svg-wrapper');
-  });
-  $('.nearMe').click(function() {
-    $('.hotel').removeClass('svg-wrapper');
-    $('.resturant').removeClass('svg-wrapper');
-    $('.plane').removeClass('svg-wrapper');
-    $('.didani').removeClass('svg-wrapper');
-    $('.nearMe').addClass('svg-wrapper');
-  });
 
   // web
 
@@ -69,15 +33,21 @@ $(document).ready(function() {
       const scroll = $(window).scrollTop();
       if (scroll >= 150) {
         $('#navbar').css('background-color', 'white');
-        $('#navbar').css('box-shadow', '-2.5px 4.3px 15px 0 #e0e0e0');
+        $('#navbar').css(
+          'box-shadow',
+          '0px 9px 5px -5px #e0e0e0, 0px 0px 5px -5px #e0e0e0'
+        );
       } else {
         $('#navbar').css('background-color', 'unset');
         $('#navbar').css('box-shadow', 'none');
       }
     });
-
-    // slider
-
-    $('.carousel-item');
   }
 });
+
+function clickedIcon(el) {
+  $('#icons')
+    .children()
+    .removeClass('svg-wrapper');
+  $(el).addClass('svg-wrapper');
+}
