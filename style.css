@@ -137,6 +137,96 @@ h5 {
 }
 
 
+.ideas {
+    text-align: center;
+}
+
+.scientific {
+    background-image: url(./export/reading.jpeg);
+}
+
+.nature {
+    background-image: url(./export/masal.jpg);
+}
+
+.religious {
+    background-image: url(./export/mir.jpg);
+}
+
+.fun {
+    background-image: url(./export/water-park.png);
+}
+
+.historical {
+    background-image: url(./export/Cyrus.jpg);
+}
+
+.categories span {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    width: 100%;
+    align-self: flex-end;
+    height: 0px;
+    visibility: hidden;
+    margin: 0;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 10px;
+    transition: all 0.8s;
+}
+
+.categories div {
+    min-width: 180px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 15px;
+    white-space: nowrap;
+    border-radius: 10px;
+    background-size: cover;
+    box-shadow: 0px 10px 20px 0 #bdbdbd;
+    overflow: hidden;
+}
+
+.categories {
+    width: 100%;
+    white-space: nowrap;
+    float: left;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscribe {
+    text-align: center;
+}
+
+.subscribe div input {
+    border-radius: 25px;
+    box-shadow: 0px 4px 20px 0 rgba(0, 88, 67, 0.17);
+}
+
+.fotter-img {
+    width: 60px;
+    height: 60px;
+
+}
+
+.footer-logo {
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    left: 70%;
+}
+
+.header-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 @media only screen and (max-width: 768px) {
 
     .navbar,
@@ -236,10 +326,6 @@ h5 {
         display: flex;
     }
 
-
-
-
-
     .download-description {
         display: flex;
         flex-direction: column;
@@ -249,70 +335,25 @@ h5 {
     }
 
 
-
     .ideas-and-categories {
         height: 80vh;
     }
 
-    .ideas {
-        text-align: center;
-    }
-
-    .scientific {
-        background-image: url(./export/reading.jpeg);
-    }
-
-    .nature {
-        background-image: url(./export/masal.jpg);
-    }
-
-    .religious {
-        background-image: url(./export/mir.jpg);
-    }
-
-    .fun {
-        background-image: url(./export/water-park.png);
-    }
-
-    .historical {
-        background-image: url(./export/Cyrus.jpg);
-    }
-
     .categories span {
-        background-color: rgba(0, 0, 0, 0.7);
-        color: white;
-        width: 100%;
-        align-self: flex-end;
-        height: 50px;
-        margin: 0;
-        text-align: center;
-        border-bottom-left-radius: 10px;
-        border-bottom-right-radius: 10px;
-        padding-top: 10px;
+        height: 50px !important;
+        visibility: visible !important;
     }
 
     .categories div {
-        min-width: 200px;
-        height: 150px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        margin: 0 15px;
-        white-space: nowrap;
-        border-radius: 10px;
-        background-size: cover;
-        box-shadow: 0px 10px 20px 0 #bdbdbd;
+        min-width: 200px !important;
+        height: 150px !important;
     }
 
     .categories {
         width: 100%;
-        overflow-x: scroll;
-        overflow-y: hidden;
-        white-space: nowrap;
-        float: left;
-        display: flex;
-        justify-content: space-between;
+        overflow-x: scroll !important;
+        overflow-y: hidden !important;
+        margin: 45px 0;
     }
 
     .subscribe-and-footer {
@@ -326,26 +367,12 @@ h5 {
         position: relative;
     }
 
-    .subscribe input {
-        border-radius: 25px;
-        box-shadow: 0px 4px 20px 0 rgba(0, 88, 67, 0.17);
-    }
-
-    .subscribe {
-        text-align: center;
-    }
 
     .contact {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         margin: 30% 0 10% 0;
-    }
-
-    .fotter-img {
-        width: 60px;
-        height: 60px;
-
     }
 
     .links-div {
@@ -358,12 +385,11 @@ h5 {
     }
 
     .footer-logo {
-        position: absolute;
-        height: 60px;
-        width: 60px;
         left: 40%;
         bottom: 0%;
     }
+
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -461,6 +487,103 @@ h5 {
     .splitter-row div .btn {
         position: absolute;
         top: 110%;
+    }
+
+    .subscribe-and-footer {
+        position: relative;
+        padding-top: 200px;
+    }
+
+    .subscribe div {
+        position: relative;
+    }
+
+
+    .subscribe div button {
+        position: absolute;
+        left: 25%;
+        bottom: 0%;
+    }
+
+    .contact {
+        position: relative;
+        height: 20px;
+    }
+
+    .tele {
+        position: absolute;
+        left: 18%;
+        top: 90px;
+        z-index: 1;
+    }
+
+    .insta {
+        position: absolute;
+        left: 12%;
+        top: 80px;
+        z-index: 2;
+    }
+
+    .twitter {
+        position: absolute;
+        left: 6%;
+        top: 50px;
+        z-index: 3;
+    }
+
+    .links-div {
+        background-image: url(./export/025_footer_Bg.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        height: 200px;
+        display: flex;
+    }
+
+    .footer-logo {
+        top: -20%;
+        right: 20%;
+    }
+
+    .links {
+        margin: 0;
+        color: white;
+    }
+
+    .link-1 {
+        position: absolute;
+        left: 50%;
+        top: 40%;
+    }
+
+    .link-2 {
+        position: absolute;
+        left: 38%;
+        top: 40%;
+    }
+
+    .links li {
+        padding: 5px 0;
+    }
+
+    .links li:hover {
+        cursor: pointer;
+    }
+
+    .web-footer {
+        background-image: url(./export/026_footer_c.right_bg.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        bottom: 0;
+        height: 90px;
+    }
+
+    .web-footer span {
+        position: absolute;
+        bottom: 0;
+        right: 70px;
+        width: 70%;
+        color: white;
     }
 }
 
