@@ -18,6 +18,10 @@ h5 {
     height: 90px;
 }
 
+.nav-link {
+    cursor: pointer;
+}
+
 .des-text h5 {
     color: #00a680;
     border-bottom: #007f62 solid 3px;
@@ -161,7 +165,7 @@ h5 {
     background-image: url(./export/Cyrus.jpg);
 }
 
-.categories span {
+.categories div span {
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
     width: 100%;
@@ -169,11 +173,18 @@ h5 {
     height: 0px;
     visibility: hidden;
     margin: 0;
+    transform: translateY(10px);
     text-align: center;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     padding-top: 10px;
     transition: all 0.8s;
+}
+
+.categories div:hover span {
+    height: 50px;
+    visibility: visible;
+
 }
 
 .categories div {
@@ -193,8 +204,6 @@ h5 {
 
 .categories {
     width: 100%;
-    white-space: nowrap;
-    float: left;
     display: flex;
     justify-content: space-between;
 }
@@ -339,7 +348,7 @@ h5 {
         height: 80vh;
     }
 
-    .categories span {
+    .categories div span {
         height: 50px !important;
         visibility: visible !important;
     }
@@ -353,6 +362,8 @@ h5 {
         width: 100%;
         overflow-x: scroll !important;
         overflow-y: hidden !important;
+        white-space: nowrap;
+        float: left;
         margin: 45px 0;
     }
 

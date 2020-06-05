@@ -1,4 +1,3 @@
-/* eslint-disable */
 $(document).ready(function() {
   // search button
 
@@ -42,19 +41,19 @@ $(document).ready(function() {
         $('#navbar').css('box-shadow', 'none');
       }
     });
-
-    
-      // ideas row on web
-
-    $('.categories div').hover(function(){
-      $('.categories div span').css('visibility','visible')
-      $('.categories div span').css('height','50px')
-    },function(){
-      $('.categories div span').css('visibility','hidden')
-      $('.categories div span').css('height','0px')
-    })
+    // scroll nav
+    $('.nav-link').click(function() {
+      let target = $(this).attr('target');
+      target = `#${target}`;
+      $('html, body').animate(
+        {
+          scrollTop: $(`${target}`).offset().top - 150,
+        },
+        1000
+      );
+    });
+    //
   }
- 
 });
 // icons row
 function clickedIcon(el) {
