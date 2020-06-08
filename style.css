@@ -101,7 +101,7 @@ h5 {
 }
 
 .green-button {
-    width: fit-content;
+    min-width: 160px;
     border-radius: 25px;
     box-shadow: 0px 6px 15px 0 rgba(0, 127, 98, 0.25);
     background-image: linear-gradient(to left, #00a680 30%, #00f4bd);
