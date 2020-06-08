@@ -1,3 +1,9 @@
+$(window).on('load', function() {
+  setTimeout(function() {
+    $('.loader').fadeOut();
+    $('.preloader').addClass('complete');
+  }, 2000);
+});
 $(document).ready(function() {
   // search button
 
